@@ -3,20 +3,18 @@ import Attribution from "./components/Attribution";
 import Rating from "./components/Rating";
 import ThankYou from "./components/ThankYou";
 
-const App = () => {
+export default function App() {
   const [selectedRating, setSelectedRating] = useState(null);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   return (
-    <section className="section">
+    <main className="min-h-screen grid place-items-center bg-very_dark_blue">
       {isSubmitted ? (
         <ThankYou selectedRating={selectedRating} />
       ) : (
         <Rating selectedRating={selectedRating} setSelectedRating={setSelectedRating} setIsSubmitted={setIsSubmitted} />
       )}
       <Attribution />
-    </section>
+    </main>
   );
-};
-
-export default App;
+}
