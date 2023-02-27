@@ -33,7 +33,7 @@ export default function Rating({ selectedRating, setSelectedRating, setIsSubmitt
       <button
         type="submit"
         disabled={!selectedRating}
-        className="py-2 rounded-3xl bg-orange text-white disabled:bg-medium_grey disabled:text-dark_blue disabled:cursor-not-allowed text-[.8rem] uppercase tracking-wider">
+        className="py-2 rounded-3xl bg-orange text-white hover:bg-white hover:text-orange disabled:bg-medium_grey disabled:text-dark_blue disabled:cursor-not-allowed text-[.8rem] uppercase tracking-wider transition-color duration-200">
         submit
       </button>
     </form>
