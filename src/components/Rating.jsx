@@ -1,5 +1,5 @@
 import React from "react";
-import iconStar from '../../public/icon-star.svg'
+import iconStar from "../../public/icon-star.svg";
 
 export default function Rating({ selectedRating, setSelectedRating, setIsSubmitted }) {
   const handleSubmit = (e) => {
@@ -34,7 +34,7 @@ export default function Rating({ selectedRating, setSelectedRating, setIsSubmitt
       <button
         type="submit"
         disabled={!selectedRating}
-        className="py-2 rounded-3xl bg-orange text-white hover:bg-white hover:text-orange disabled:bg-medium_grey disabled:text-dark_blue disabled:cursor-not-allowed text-[.8rem] uppercase tracking-wider transition-color duration-200">
+        className="py-2 rounded-3xl bg-orange text-white hover:bg-white hover:text-orange disabled:text-dark_blue disabled:cursor-not-allowed text-[.8rem] uppercase tracking-wider transition-color duration-200 disabled:bg-medium_grey disabled:hover:bg-medium_grey">
         submit
       </button>
     </form>
