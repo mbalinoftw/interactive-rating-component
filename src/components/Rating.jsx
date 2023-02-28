@@ -1,4 +1,5 @@
 import React from "react";
+import iconStar from '../../public/icon-star.svg'
 
 export default function Rating({ selectedRating, setSelectedRating, setIsSubmitted }) {
   const handleSubmit = (e) => {
@@ -11,7 +12,7 @@ export default function Rating({ selectedRating, setSelectedRating, setIsSubmitt
       action=""
       className="px-6 py-8 w-full max-w-[23rem] flex flex-col justify-around gap-6 rounded-3xl bg-gradient-to-b from-dark_blue to-gray-900"
       onSubmit={handleSubmit}>
-      <img src="/icon-star.svg" alt="star icon" className="p-4 self-start rounded-full bg-dark_blue shadow-sm" />
+      <img src={iconStar} alt="star icon" className="p-4 self-start rounded-full bg-dark_blue shadow-sm" />
       <div className="space-y-2">
         <h2 className="text-[1.6rem] text-white">How did we do?</h2>
         <p className="text-[0.88rem] text-light_grey leading-6">
