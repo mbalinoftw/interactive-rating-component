@@ -30,48 +30,22 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-interactive-rating-component-with-reactjs-and-usestate-yDm2Ne5R39](https://www.frontendmentor.io/solutions/responsive-interactive-rating-component-with-reactjs-and-usestate-yDm2Ne5R39)
+- Live Site URL: [https://mbalinoftw.github.io/interactive-rating-component/](https://mbalinoftw.github.io/interactive-rating-component/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
+- [ReactJS](https://reactjs.org/)
+- [ViteJS](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
 
 ### What I learned
 
 - State management with useState and passing props from parent to child components.
 - Conditional rendering.
-
-CSS Custom properties
-
-```css
-:root {
-  --white: hsl(0, 0%, 100%);
-  --light-grey: hsl(217, 12%, 63%);
-  --medium-grey: hsl(216, 12%, 54%);
-  --dark-blue: hsl(213, 19%, 18%);
-  --very-dark-blue: hsl(216, 12%, 8%);
-  --orange: hsl(25, 97%, 53%);
-}
-```
-
-Pattern to render lists in React
-
-```js
-{
-  [1, 2, 3, 4, 5].map((rating) => (
-    <button key={rating} type="button" onClick={() => setSelectedRating(rating)} className="btn">
-      {rating}
-    </button>
-  ));
-}
-```
+- Deploying to GithubPages.
 
 ## Author
 
