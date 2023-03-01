@@ -1,5 +1,5 @@
 import React from "react";
-import iconStar from "../../public/icon-star.svg";
+import iconStar from "/icon-star.svg";
 
 export default function Rating({ selectedRating, setSelectedRating, setIsSubmitted }) {
   const handleSubmit = (e) => {
